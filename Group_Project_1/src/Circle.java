@@ -21,10 +21,12 @@ class Circle extends Shape{
 	public void setRadius(double r){
 		radius = r;
 	}
+	@Override
 	public double area(){
 		double area = Math.PI * radius * radius;
 		return area;
 	}
+	@Override
 	public String toString(){
 		return "Circle at (" + upperX + ", " + upperY + ") with radius = " + radius;
 	}

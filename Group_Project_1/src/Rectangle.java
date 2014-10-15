@@ -30,10 +30,12 @@ class Rectangle extends Shape{
 	public void setWidth(double w){
 		width = w;
 	}
+	@Override
 	public double area(){
 		double area = length * width;
 		return area;
 	}
+	@Override
 	public String toString(){
 		return "Rectangle at (" + upperX + ", " + upperY + ") with legnth = " + length + " and width = " + width;
 	}
