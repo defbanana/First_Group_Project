@@ -6,7 +6,7 @@ import java.util.*;
  * array (or ArrayList), print them out, and find the biggest rectangle using
  * the method "findBiggestRectangle".
  * 
- * @author Your name here.
+ * @author Jesse and Amanda.
  * 
  */
 public class ReadShapes {
@@ -89,7 +89,7 @@ public class ReadShapes {
 	/**
 	 * Iterates through the list of shapes and returns the rectangle with the
 	 * largest area.
-	 * 
+	 * @param listOfOrders - of type ArrayList<CommandStruct>
 	 * @return The Rectangle with the largest area.
 	 */
 	public static Rectangle findBiggestRectangle(ArrayList<CommandStruct> listOfOrders) {
