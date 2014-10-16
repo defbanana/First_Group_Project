@@ -37,6 +37,6 @@ class Rectangle extends Shape{
 	}
 	@Override
 	public String toString(){
-		return "Rectangle at (" + upperX + ", " + upperY + ") with legnth = " + length + " and width = " + width;
+		return "Rectangle at (" + upperX + ", " + upperY + ") with length = " + length + " and width = " + width;
 	}
 }

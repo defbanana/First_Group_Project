@@ -21,6 +21,7 @@ public class ReadShapes {
 	 *            Ignored
 	 * @throws IOException 
 	 */
+	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 
 
@@ -30,6 +31,7 @@ public class ReadShapes {
 		BufferedReader reader;
 
 		reader = new BufferedReader(new FileReader("c:\\shapes.txt"));
+		//reader = new BufferedReader(new FileReader("~\\shapes.txt"));
 	
 		String line = null;
 		
@@ -55,7 +57,26 @@ public class ReadShapes {
 		System.out.println("Here is the list of shapes: ");
 		// Some code here to print out the list		
 		for (CommandStruct element : listOfOrders){
-			System.out.println(element.getCommand() + element.printValues());
+			//System.out.println(element.getCommand() + element.printValues());
+			String tempCommand = element.getCommand();
+			if (tempCommand.compareTo("RECTANGLE") == 0){
+				int x = (int)Math.round(element.values.get(0));
+				int y = (int)Math.round(element.values.get(1));
+				double l = element.values.get(2);
+				double w = element.values.get(3);
+				
+				Rectangle tempRectangle = new Rectangle(x, y, l, w);
+				System.out.println(tempRectangle);
+			}
+			else
+			{
+				int x = (int)Math.round(element.values.get(0));
+				int y = (int)Math.round(element.values.get(1));
+				double r = element.values.get(2);
+				
+				Circle tempCircle = new Circle(x, y, r);
+				System.out.println(tempCircle);
+			}
 		}
 
 		System.out.print("\nThe rectangle with the greatest area is ");
@@ -89,8 +110,10 @@ public class ReadShapes {
 				Rectangle tempRectangle = new Rectangle(x, y, l, w);
 				
 				// not worried about a negative area
+				//System.out.println(tempRectangle.area() + " " + largestArea);
 				if (tempRectangle.area() > largestArea){
 					biggest = tempRectangle;
+					largestArea = tempRectangle.area();
 				}
 			}
 		}
