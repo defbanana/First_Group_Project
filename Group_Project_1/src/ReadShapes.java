@@ -19,14 +19,18 @@ public class ReadShapes {
 	 * 
 	 * @param args
 	 *            Ignored
+	 * @throws IOException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 
 		ArrayList<CommandStruct> listOfOrders = new ArrayList<CommandStruct>();
 				
 		// read in the data file "shapes.txt"
-		BufferedReader reader = new BufferedReader(new FileReader("shapes.txt"));
+		BufferedReader reader;
+
+		reader = new BufferedReader(new FileReader("c:\\shapes.txt"));
+	
 		String line = null;
 		
 		while ((line = reader.readLine()) != null) {

@@ -20,7 +20,7 @@ public class CommandStruct {
 	}
 	
 	public String printValues(){
-		String theString = null;
+		String theString ="";
 		
 		for (Double number : this.values){
 			theString += " " + String.valueOf(number);
