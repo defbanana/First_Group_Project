@@ -60,6 +60,7 @@ public abstract class Shape {
 	/**
 	 * The area value for the object
 	 * Should be overloaded by subclass
+	 * @return the area value.
 	 */
 	abstract public double area();
 	

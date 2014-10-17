@@ -30,8 +30,8 @@ public class ReadShapes {
 		// read in the data file "shapes.txt"
 		BufferedReader reader;
 
-		reader = new BufferedReader(new FileReader("c:\\shapes.txt")); //Use this line to work on home computer
-		//reader = new BufferedReader(new FileReader("shapes.txt")); //Use this line when you turn this in for credit
+		//reader = new BufferedReader(new FileReader("c:\\shapes.txt")); //Use this line to work on home computer
+		reader = new BufferedReader(new FileReader("shapes.txt")); //Use this line when you turn this in for credit
 	
 		String line = null;
 		

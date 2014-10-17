@@ -36,7 +36,7 @@ public class CommandStruct {
 	
 	/**
 	 * Set the shape object to create.  
-	 * @param the string of the object name
+	 * @param newCommand the string of the object name
 	 */
 	public void setCommand(String newCommand){
 		command = newCommand;

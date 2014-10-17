@@ -41,7 +41,7 @@ class Circle extends Shape{
 	
 	/**
 	 * Set the radius  
-	 * @param set the radius value
+	 * @param r set the radius value
 	 */
 	public void setRadius(double r){
 		radius = r;
